@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css" />
+    <style>
+      @font-face {
+        font-family: main-logo;
+        src: url(Bungee-Regular.otf);
+      }
+
+      * {
+        overflow-x: hidden;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+      }
+
+      .logo {
+        font-family: Bungee-Regular;
+        font-size: 4rem;
+        text-align: center;
+        height: 55vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .main-buttons {
+        padding-top: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .button1 {
+        display: inline-block;
+        padding: 1.5rem 5rem;
+        border-radius: 10rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: 0.15rem;
+        transition: all 0.3s;
+        position: relative;
+        text-decoration: none;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .button1:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #4285f4;
+        border-radius: 10rem;
+        z-index: -2;
+        text-decoration: none;
+      }
+      .button1:before {
+        text-decoration: none;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #db4437;
+        transition: all 0.3s;
+        border-radius: 10rem;
+        z-index: -1;
+      }
+      .button1:hover {
+        color: #fff;
+      }
+      .button1:hover:before {
+        width: 100%;
+      }
+
+      .button2 {
+        display: inline-block;
+        padding: 1.5rem 5rem;
+        border-radius: 10rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: 0.15rem;
+        transition: all 0.3s;
+        position: relative;
+        text-decoration: none;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .button2:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #f4b400;
+        border-radius: 10rem;
+        z-index: -2;
+        text-decoration: none;
+      }
+      .button2:before {
+        text-decoration: none;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #0f9d58;
+        transition: all 0.3s;
+        border-radius: 10rem;
+        z-index: -1;
+      }
+      .button2:hover {
+        color: #fff;
+      }
+      .button2:hover:before {
+        width: 100%;
+      }
+      .button3 {
+        display: inline-block;
+        padding: 1.5rem 5rem;
+        border-radius: 10rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: 0.15rem;
+        transition: all 0.3s;
+        position: relative;
+        text-decoration: none;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .button3:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #db4437;
+        border-radius: 10rem;
+        z-index: -2;
+        text-decoration: none;
+      }
+      .button3:before {
+        text-decoration: none;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #4285f4;
+        transition: all 0.3s;
+        border-radius: 10rem;
+        z-index: -1;
+      }
+      .button3:hover {
+        color: #fff;
+      }
+      .button3:hover:before {
+        width: 100%;
+      }
+      .button4 {
+        display: inline-block;
+        padding: 1.5rem 5rem;
+        border-radius: 10rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: 0.15rem;
+        transition: all 0.3s;
+        position: relative;
+        text-decoration: none;
+        overflow: hidden;
+        z-index: 1;
+      }
+      .button4:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0f9d58;
+        border-radius: 10rem;
+        z-index: -2;
+        text-decoration: none;
+      }
+      .button4:before {
+        text-decoration: none;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #f4b400;
+        transition: all 0.3s;
+        border-radius: 10rem;
+        z-index: -1;
+      }
+      .button4:hover {
+        color: #fff;
+      }
+      .button4:hover:before {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <svg
+        width="784.81"
+        height="117.605"
+        viewBox="0 0 784.81 117.605"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          id="svgGroup"
+          stroke-linecap="round"
+          fill-rule="evenodd"
+          font-size="9pt"
+          stroke="#000"
+          stroke-width="0.25mm"
+          fill="#000"
+          style="stroke: #000; stroke-width: 0.25mm; fill: #000"
+        >
+          <path
+            d="M 84.168 109.444 L 84.168 90.404 C 84.168 86.404 82.408 84.644 78.408 84.644 L 46.248 84.644 A 20.266 20.266 0 0 1 42.852 84.387 C 39.014 83.731 36.999 81.8 36.574 78.417 A 11.65 11.65 0 0 1 36.488 76.964 L 36.488 38.884 A 10.002 10.002 0 0 1 36.997 35.529 C 38.115 32.384 41.103 30.884 46.248 30.884 L 78.408 30.884 C 82.408 30.884 84.168 29.124 84.168 25.124 L 84.168 5.764 C 84.168 1.764 82.408 0.004 78.408 0.004 L 39.368 0.004 A 74.752 74.752 0 0 0 25.251 1.206 C 10.917 3.977 2.918 11.587 0.67 24.522 A 48.438 48.438 0 0 0 0.008 32.804 L 0.008 82.564 C 0.008 103.003 10.549 113.442 33.121 114.998 A 90.913 90.913 0 0 0 39.368 115.204 L 78.408 115.204 C 82.408 115.204 84.168 113.444 84.168 109.444 Z"
+            id="0"
+            vector-effect="non-scaling-stroke"
+            fill="#4285f4"
+            stroke="transparent"
+          />
+          <path
+            d="M 138.408 109.444 L 138.408 78.084 L 160.808 78.084 A 9.736 9.736 0 0 1 163.093 78.322 C 165.847 78.99 166.888 81.092 166.888 84.964 L 166.888 109.444 C 166.888 113.444 168.648 115.204 172.648 115.204 L 197.448 115.204 C 201.448 115.204 203.208 113.444 203.208 109.444 L 203.208 75.524 A 28.279 28.279 0 0 0 201.583 65.719 A 20.312 20.312 0 0 0 183.848 52.324 A 13.638 13.638 0 0 0 191.88 42.543 C 192.406 40.541 192.688 38.305 192.776 35.857 A 49.072 49.072 0 0 0 192.808 34.084 L 192.808 26.724 A 31.297 31.297 0 0 0 190.198 13.224 C 186.299 5.03 177.6 0.004 161.288 0.004 L 108.008 0.004 C 104.008 0.004 102.248 1.764 102.248 5.764 L 102.248 109.444 C 102.248 113.444 104.008 115.204 108.008 115.204 L 132.648 115.204 C 136.648 115.204 138.408 113.444 138.408 109.444 Z M 138.408 28.804 L 150.408 28.804 A 10.687 10.687 0 0 1 152.94 29.077 C 155.693 29.749 156.897 31.615 157.291 34.108 A 14.271 14.271 0 0 1 157.448 36.324 L 157.448 41.764 C 157.448 46.084 156.008 49.284 150.408 49.284 L 138.408 49.284 L 138.408 28.804 Z"
+            id="1"
+            vector-effect="non-scaling-stroke"
+            fill="#db4437"
+            stroke="transparent"
+          />
+          <path
+            d="M 319.208 84.964 L 319.208 5.764 C 319.208 1.764 317.448 0.004 313.448 0.004 L 289.128 0.004 A 10.111 10.111 0 0 0 287.013 0.201 C 284.481 0.745 283.423 2.438 283.37 5.514 A 14.387 14.387 0 0 0 283.368 5.764 L 283.368 78.724 C 283.368 83.044 281.448 86.244 270.088 86.244 A 43.888 43.888 0 0 1 266.099 86.079 C 260.974 85.609 258.624 84.162 257.627 82.139 A 7.637 7.637 0 0 1 256.968 78.724 L 256.968 5.764 C 256.968 1.764 255.208 0.004 251.208 0.004 L 226.088 0.004 C 222.088 0.004 220.328 1.764 220.328 5.764 L 220.328 84.964 A 27.013 27.013 0 0 0 232.333 110.117 C 238.099 113.76 246.35 116.198 257.924 117.152 A 144.543 144.543 0 0 0 269.768 117.604 A 135.187 135.187 0 0 0 284.789 116.844 C 296.271 115.554 304.191 112.663 309.511 108.492 A 27.679 27.679 0 0 0 319.208 84.964 Z"
+            id="2"
+            vector-effect="non-scaling-stroke"
+            fill="#f4b400"
+            stroke="transparent"
+          />
+          <path
+            d="M 439.528 82.564 L 439.528 32.644 C 439.528 12.204 428.986 1.765 406.414 0.209 A 90.913 90.913 0 0 0 400.168 0.004 L 346.248 0.004 C 342.248 0.004 340.488 1.764 340.488 5.764 L 340.488 109.444 C 340.488 113.444 342.248 115.204 346.248 115.204 L 400.168 115.204 A 74.857 74.857 0 0 0 414.284 114.003 C 428.783 111.204 436.801 103.468 438.94 90.344 A 48.413 48.413 0 0 0 439.528 82.564 Z M 376.808 30.564 L 395.848 30.564 A 11.436 11.436 0 0 1 398.774 30.901 C 401.769 31.696 403.253 33.92 403.361 37.778 A 16.558 16.558 0 0 1 403.368 38.244 L 403.368 77.124 A 13.011 13.011 0 0 1 403.069 80.062 C 402.469 82.64 400.955 84.139 398.454 84.704 A 11.872 11.872 0 0 1 395.848 84.964 L 376.808 84.964 L 376.808 30.564 Z"
+            id="3"
+            vector-effect="non-scaling-stroke"
+            fill="#0f9d58"
+            stroke="transparent"
+          />
+          <path
+            d="M 558.888 82.564 L 558.888 32.644 C 558.888 12.204 548.346 1.765 525.774 0.209 A 90.913 90.913 0 0 0 519.528 0.004 L 465.608 0.004 C 461.608 0.004 459.848 1.764 459.848 5.764 L 459.848 109.444 C 459.848 113.444 461.608 115.204 465.608 115.204 L 519.528 115.204 A 74.857 74.857 0 0 0 533.644 114.003 C 548.143 111.204 556.161 103.468 558.3 90.344 A 48.413 48.413 0 0 0 558.888 82.564 Z M 496.168 30.564 L 515.208 30.564 A 11.436 11.436 0 0 1 518.134 30.901 C 521.129 31.696 522.613 33.92 522.721 37.778 A 16.558 16.558 0 0 1 522.728 38.244 L 522.728 77.124 A 13.011 13.011 0 0 1 522.429 80.062 C 521.829 82.64 520.315 84.139 517.814 84.704 A 11.872 11.872 0 0 1 515.208 84.964 L 496.168 84.964 L 496.168 30.564 Z"
+            id="4"
+            vector-effect="non-scaling-stroke"
+            stroke="transparent"
+            fill="rgb(40, 40, 40)"
+          />
+          <path
+            d="M 664.968 109.444 L 664.968 90.724 C 664.968 86.724 663.208 84.964 659.208 84.964 L 615.048 84.964 L 615.048 71.204 L 646.248 71.204 C 650.248 71.204 652.008 69.444 652.008 65.444 L 652.008 48.324 C 652.008 44.324 650.248 42.564 646.248 42.564 L 615.048 42.564 L 615.048 30.244 L 659.208 30.244 C 663.208 30.244 664.968 28.484 664.968 24.484 L 664.968 5.764 C 664.968 1.764 663.208 0.004 659.208 0.004 L 584.968 0.004 C 580.968 0.004 579.208 1.764 579.208 5.764 L 579.208 109.444 C 579.208 113.444 580.968 115.204 584.968 115.204 L 659.208 115.204 C 663.208 115.204 664.968 113.444 664.968 109.444 Z"
+            id="5"
+            vector-effect="non-scaling-stroke"
+            stroke="transparent"
+            fill="rgb(40, 40, 40)"
+          />
+          <path
+            d="M 720.008 109.444 L 720.008 78.084 L 742.408 78.084 A 9.736 9.736 0 0 1 744.693 78.322 C 747.447 78.99 748.488 81.092 748.488 84.964 L 748.488 109.444 C 748.488 113.444 750.248 115.204 754.248 115.204 L 779.048 115.204 C 783.048 115.204 784.808 113.444 784.808 109.444 L 784.808 75.524 A 28.279 28.279 0 0 0 783.183 65.719 A 20.312 20.312 0 0 0 765.448 52.324 A 13.638 13.638 0 0 0 773.48 42.543 C 774.006 40.541 774.288 38.305 774.376 35.857 A 49.072 49.072 0 0 0 774.408 34.084 L 774.408 26.724 A 31.297 31.297 0 0 0 771.798 13.224 C 767.899 5.03 759.2 0.004 742.888 0.004 L 689.608 0.004 C 685.608 0.004 683.848 1.764 683.848 5.764 L 683.848 109.444 C 683.848 113.444 685.608 115.204 689.608 115.204 L 714.248 115.204 C 718.248 115.204 720.008 113.444 720.008 109.444 Z M 720.008 28.804 L 732.008 28.804 A 10.687 10.687 0 0 1 734.54 29.077 C 737.293 29.749 738.497 31.615 738.891 34.108 A 14.271 14.271 0 0 1 739.048 36.324 L 739.048 41.764 C 739.048 46.084 737.608 49.284 732.008 49.284 L 720.008 49.284 L 720.008 28.804 Z"
+            id="6"
+            vector-effect="non-scaling-stroke"
+            stroke="transparent"
+            fill="rgb(40, 40, 40)"
+          />
+        </g>
+      </svg>
+    </div>
+
+    <div class="main-buttons">
+      <a href="/excelpage" class="button1">.XLS Upload</a>
+      <a href="/formpage" class="button2" id="manualoploadbtn">Manual Upload</a>
+    </div>
+    <div class="main-buttons">
+      <a href="/viewform" class="button3">View Form </a>
+      <a href="/formpage" class="button4" id="manualoploadbtn">To my Github</a>
+    </div>
+  </body>
+</html>
